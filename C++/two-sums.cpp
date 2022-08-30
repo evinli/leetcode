@@ -27,12 +27,10 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> umap;
         for (int i = 0; i < nums.size(); i++) {
-            if (umap.find(target - nums.at(i)) != umap.end()) {
+            if (umap.find(target - nums.at(i)) != umap.end()) { // faster than umap.count()
                 return {umap.at(target - nums.at(i)), i};
             }
-            if (umap.find(nums.at(i)) == umap.end()) {
-                umap.insert({nums.at(i), i});
-            }
+            umap.insert({nums.at(i), i}); // u-map doesn't allow duplicate keys 
         }
         return {};
     }
