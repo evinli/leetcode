@@ -1,4 +1,6 @@
-class Solution {
+package org.problems;
+
+class ClimbingStairs {
     public int climbStairs(int n) {
         if (n == 1 || n == 2) return n;
         int prev1 = 1;

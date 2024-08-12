@@ -1,6 +1,8 @@
+package org.problems;
+
 // Whichever height (front vs. back) is smaller, we won’t consider it again, because, this height could
 // only be the answer only if the other height is larger than it and at maximum width.
-class Solution {
+class ContainerMostWater {
     public int maxArea(int[] height) {
         int maxArea = 0;
         int front = 0;

@@ -1,4 +1,6 @@
-class Solution {
+package org.problems;
+
+class MaxAreaOfIsland {
     public int maxAreaOfIsland(int[][] grid) {
         int maxArea = 0;
         for (int row = 0; row < grid.length; row++) {
